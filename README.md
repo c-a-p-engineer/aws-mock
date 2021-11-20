@@ -17,6 +17,16 @@ docker-compose up -d --build
 docker exec -it aws-cli sh
 ```
 
+# Command
+
+`--endpoint-url` は localstackを指定します。
+## S3
+
+```
+aws --endpoint-url=http://localstack:4566 \
+s3 mb s3://develop
+```
+
 # Note
 * [localstack - docker hub](https://hub.docker.com/r/localstack/localstack)
 * [localstack - github](https://github.com/localstack/localstack)
